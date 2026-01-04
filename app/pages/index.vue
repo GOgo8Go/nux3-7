@@ -45,25 +45,9 @@ const pageKeywords = '图片压缩,GIF压缩,去背景,PDF合并,PDF分割,在�
           icon="material-symbols:gif-box"
           to="/gif-compress"
         />
-        <ToolCard
-          title="去背景"
-          desc="一键智能抠图，去除背景"
-          icon="material-symbols:auto-awesome"
-          to="/image-remove-bg"
-        />
-        <ToolCard
-          title="PDF 合并"
-          desc="多个 PDF 文件合并成一个"
-          icon="material-symbols:merge"
-          to="/pdf-merge"
-        />
-        <ToolCard
-          title="PDF 分割"
-          desc="按页面分割 PDF 文件"
-          icon="material-symbols:content-cut"
-          to="/pdf-split"
-        />
+ 
       </div>
     </section>
   </div>
 </template>
+
