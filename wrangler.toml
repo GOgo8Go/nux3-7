@@ -1,6 +1,0 @@
-name = "your-project-name"  # 可以随便填，或留空
-
-compatibility_flags = ["nodejs_compat"]
-
-# 可选：如果还有其他警告，可以加
-# compatibility_date = "202521111"
