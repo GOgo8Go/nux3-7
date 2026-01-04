@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   srcDir: 'app/',   // ← 保持不变，必须有
   devtools: { enabled: true },
 
-  css: ['./assets/css/main.css'],
+  css: ['@/assets/css/main.css'],
   modules: [
     '@nuxtjs/i18n',
     
@@ -22,9 +22,6 @@ export default defineNuxtConfig({
 
   // ← 新增这一段，支持 Cloudflare Pages
   nitro: {
-    preset: 'cloudflare_pages',
-    prerender: {
-      crawlLinks: false,  // 禁用 crawler 预渲染
-      routes: []          // 不预渲染任何路由（动态 SSR）
+    preset: 'cloudflare_pages'
   }
 })
