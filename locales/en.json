@@ -1,0 +1,18 @@
+{
+  "siteName": "ToolSwift",
+  "slogan": "Free and fast online tools collection",
+  "nav": {
+    "home": "Home",
+    "imageTools": "Image Tools",
+    "gifTools": "GIF Tools",
+    "pdfTools": "PDF Tools",
+    "language": "Language"
+  },
+  "tools": {
+    "imageCompress": "Image Compress",
+    "gifCompress": "GIF Compress",
+    "removeBg": "Remove Background",
+    "pdfMerge": "PDF Merge",
+    "pdfSplit": "PDF Split"
+  }
+}
