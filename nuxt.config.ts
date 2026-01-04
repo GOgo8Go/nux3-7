@@ -22,6 +22,6 @@ export default defineNuxtConfig({
 
   // ← 新增这一段，支持 Cloudflare Pages
   nitro: {
-    preset: 'cloudflare_pages'
+    preset: 'cloudflare_pages_static'
   }
 })
