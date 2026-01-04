@@ -25,7 +25,7 @@ const toggleTheme = () => {
           <NuxtLink to="/" class="nav-link">首页</NuxtLink>
           <NuxtLink to="/image-compress" class="nav-link">图片压缩</NuxtLink>
           <NuxtLink to="/gif-compress" class="nav-link">GIF 压缩</NuxtLink>
-          <NuxtLink to="/category/pdf" class="nav-link">PDF 工具</NuxtLink>
+          <!-- <NuxtLink to="/category/pdf" class="nav-link">PDF 工具</NuxtLink> -->  <!-- 临时注释 -->
         </nav>
       </div>
 
@@ -57,3 +57,4 @@ const toggleTheme = () => {
     </div>
   </header>
 </template>
+
