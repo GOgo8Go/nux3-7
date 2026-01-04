@@ -26,8 +26,7 @@ export default defineNuxtConfig({
 
     prerender: {
       crawlLinks: false,          // 不自动爬取新链接
-      ignoreErrors: true,         // 关键！忽略 404 等 prerender 错误，继续构建
-      failOnError: false,         // 保险起见也加
+      failOnError: false,         // 关键！忽略 prerender 过程中的错误（包括 404），继续完成构建
 
       routes: [
         '/',
