@@ -1,12 +1,12 @@
 export default defineNuxtConfig({
-  srcDir: 'app/',   // 你的源码在 app/ 子目录，必须保留
+  srcDir: 'app/',   // 必须保留
 
   devtools: { enabled: true },
 
-  css: ['./assets/css/main.css'],  // 你的主样式文件
+  css: ['./assets/css/main.css'],
 
   modules: [
-    '@nuxtjs/i18n',            // 多语言模块
+    '@nuxtjs/i18n',
   ],
 
   i18n: {
@@ -21,20 +21,19 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts',
   },
 
-  // 纯静态部署配置（推荐用于当前测试阶段，样式 100% 正常）
   nitro: {
     preset: 'cloudflare_pages_static',
 
     prerender: {
-      crawlLinks: false,                  // 关闭自动爬取链接，避免未完成页面导致构建失败
-      failOnError: false,                 // 可选：即使个别路由出错也不中断构建
+      crawlLinks: false,          // 不自动爬取新链接
+      ignoreErrors: true,         // 关键！忽略 404 等 prerender 错误，继续构建
+      failOnError: false,         // 保险起见也加
 
       routes: [
-        '/',                                // 首页（中文，默认语言）
-        '/image-compress',                  // 图片压缩页面
-        '/gif-compress',                    // GIF 压缩页面
+        '/',
+        '/image-compress',
+        '/gif-compress',
 
-        // 多语言版本（确保切换语言后这些页面也正常）
         '/en',
         '/en/image-compress',
         '/en/gif-compress',
